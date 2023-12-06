@@ -1,0 +1,112 @@
+[
+    {
+        "voto":"100",
+        "tipo":"Anime",
+        "stream":"Netflix",
+        "titulo":"Naruto",
+        "faixa":"2000 • 45min • 14",
+        "sinopes":"Naruto é um anime baseado no mangá de mesmo nome escrito por Masashi Kishimoto. A série gira em torno das aventuras vividas por Naruto Uzumaki, um jovem órfão habitante da Aldeia da Folha que sonha em se tornar o quinto Hokage, o maior guerreiro e governante da vila.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/236x/d9/9d/0e/d99d0e3cc7ff84871ec9821195e8e50c.jpg",
+        "fundo":"https://i.pinimg.com/originals/47/12/5d/47125d9e1e20b7cc20af593738501944.jpg"
+    },
+    {
+        "voto":"50",
+        "tipo":"Anime",
+        "stream":"Prime",
+        "titulo":"Dragon Ball",
+        "faixa":"2046 • 46min • 14",
+        "sinopes":"A série segue as aventuras do protagonista, Son Goku, desde sua infância até a idade adulta enquanto ele treina artes marciais e explora o mundo em busca de sete esferas conhecidas como as Esferas do Dragão, que convocam um dragão que concede um desejo quando reunidas.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/originals/ce/07/30/ce07302d37513ccaac4b460ac06d78b9.jpg",
+        "fundo":"https://i.pinimg.com/originals/88/7d/02/887d020496db7af1cb1287b984d5e36c.jpg"
+    },
+    {
+        "voto":"150",
+        "tipo":"Anime",
+        "stream":"HBO",
+        "titulo":"One Punch",
+        "faixa":"2047 • 47min • 14",
+        "sinopes":"One Punch-Man conta a história de Saitama, um super-herói extremamente poderoso, que se entediou com a ausência dos desafios nas suas lutas contra o mal e procura encontrar um oponente digno.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/736x/1e/43/ef/1e43ef3b5906ebdf0ad9f21085399ebf.jpg",
+        "fundo":"https://i.pinimg.com/736x/1e/43/ef/1e43ef3b5906ebdf0ad9f21085399ebf.jpg"
+    },
+    {
+        "voto":"200",
+        "tipo":"Anime",
+        "stream":"Netflix",
+        "titulo":"One Piece",
+        "faixa":"2048 • 48min • 14",
+        "sinopes":"Monkey D. Luffy é um jovem que sempre sonhou com uma vida de liberdade. Ele sai do vilarejo onde vive para uma jornada perigosa em busca do lendário tesouro One Piece.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/736x/df/0b/f9/df0bf97bf94c1d960de03f91b5bc6fca.jpg",
+        "fundo":"https://i.pinimg.com/736x/df/0b/f9/df0bf97bf94c1d960de03f91b5bc6fca.jpg"
+    },
+    {
+        "voto":"250",
+        "tipo":"Anime",
+        "stream":"Prime",
+        "titulo":"Jujutsu Kaisen",
+        "faixa":"2046 • 46min • 14",
+        "sinopes":"A história de Jujutsu Kaisen conta a saga de Itadori Yuji, um jovem estudante que ganha poderes sobrenaturais após ingerir o dedo de sukuna, o demônio rei das maldições. A maioria dos fãs de Jujutsu Kaisen já está acostumada a ouvir sobre o que a saga se trata.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/originals/e6/33/df/e633df8d6356515c2097b6c042bb7bc3.jpg",
+        "fundo":"https://i.pinimg.com/originals/e6/33/df/e633df8d6356515c2097b6c042bb7bc3.jpg"
+    },
+    {
+        "voto":"20",
+        "tipo":"Anime",
+        "stream":"HBO",
+        "titulo":"Demon Slayer",
+        "faixa":"2047 • 47min • 14",
+        "sinopes":"Dois meninos embarcam em um trem com a missão de derrotar um demônio que tem atormentado as pessoas.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/550x/1b/07/4a/1b074a35b787b5469588318033e85946.jpg",
+        "fundo":"https://i.pinimg.com/736x/36/3d/0e/363d0ef0e67269a96383ff8a37588aef.jpg"
+    },
+    {
+        "voto":"250",
+        "tipo":"Anime",
+        "stream":"Prime",
+        "titulo":"Beyblade",
+        "faixa":"2046 • 46min • 14",
+        "sinopes":" Beyblade é um mangá e anime baseado em um brinquedo de mesmo nome semelhante a um pião. A história é sobre um grupo de garotos que lutam com suas Beyblades fortemente energizadas, dominadas por Feras-Bit (que são espíritos de criaturas místicas e poderosas) sagradas.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/736x/78/8e/c7/788ec7427b1563e1f28236083c256d4d.jpg",
+        "fundo":"https://i.pinimg.com/736x/1b/48/c0/1b48c0cfcc2c9016808f61fa2a4287c1.jpg"
+    },
+    {
+        "voto":"20",
+        "tipo":"Anime",
+        "stream":"HBO",
+        "titulo":"Pokemon",
+        "faixa":"2047 • 47min • 14",
+        "sinopes":"Pokemon é uma franquia de mídia que pertence a The Pokémon Company, tendo sido criada por Satoshi Tajiri em 1995. Ela é centrada em criaturas ficcionais chamadas Pokémon, que os seres humanos capturam e os treinam para lutarem entre si com seus ataques de diversos tipos.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/564x/ea/dc/34/eadc34bf29931adf84b57edae4898993.jpg",
+        "fundo":"https://i.pinimg.com/736x/cb/fb/56/cbfb56fb71b2500af6f0b2e568a2a77f.jpg"
+    },
+    {
+        "voto":"250",
+        "tipo":"Anime",
+        "stream":"Prime",
+        "titulo":"Yu-Gi-Oh!",
+        "faixa":"2046 • 46min • 14",
+        "sinopes":"O jovem estudante do ensino médio Yugi Muto derrota o campeão mundial, Seto Kaiba, em um duelo de cartas com a misteriosa ajuda do quebra-cabeça Millenium. Em razão de sua vitória inesperada, Yugi se torna famoso em todo o mundo e passa a participar de outros duelos para salvar os amigos e a família.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/736x/36/cf/08/36cf08ee5b3119389842b5c2e42dfff1.jpg",
+        "fundo":"https://i.pinimg.com/736x/8b/f1/41/8bf14140750ae39fac3dc7eebf3ed976.jpg"
+    },
+    {
+        "voto":"20",
+        "tipo":"Anime",
+        "stream":"HBO",
+        "titulo":"inuyasha",
+        "faixa":"2047 • 47min • 14",
+        "sinopes":"Kagome e Inu-Yasha decidem unir forças e partem para recuperar os pedaços da Joia de Quatro Almas. Pelo caminho, eles vivem grandes aventuras e enfrentam youkais malignos, sedentos pelo poder. Ao mesmo tempo, a garota ainda tem que conciliar a sua vida de aventureira no Japão antigo com os estudos no mundo atual.",
+        "genero":"Drama • comedia • acão",
+        "img":"https://i.pinimg.com/564x/e7/3b/dc/e73bdcc858a8c3cb9ea2759b876820c2.jpg",
+        "fundo":"https://i.pinimg.com/736x/f6/69/46/f6694651768d47660bc245cbbee26484.jpg"
+    }
+]
