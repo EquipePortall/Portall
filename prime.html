@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prime.css">
+</head>
+<body>
+    <header id="header">
+        <img src="" alt="" id="headerimg">
+        <button id="voltar" onclick="voltar()">←</button>
+        <div id="heade">
+            <div id="contexto">
+                <div id="voto" class="texto">
+                    <span id="spanvoto"></span>
+                </div>
+                <h1 class="texto" id="titulo"></h1>
+                <h3 class="texto" id="faixa"></h3>
+                <p class="texto" id="sinopes"></p>
+                <h3 class="texto" id="genero"></h3>
+                <div id="botoes" class="texto">
+                    <button  id="v1" class="v3" onclick="voto()">voto</button>
+                    <button  id="v2" class="v3">+</button>
+                </div>
+            </div>
+            <div id="stream">
+                <h1 id="streamh1"></h1>
+            </div>
+        </div>
+        <div id="container">
+            <div id="menu" class="car">
+                <nav>
+                    <ul>
+                        <li>Anime</li>
+                        <li>Series</li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <button id="ante"></button>
+            <button id="prox">></button>
+            
+            <div id="anime" class="car">
+                <!-- <div class="cardAnime"><img src="https://i.pinimg.com/236x/d9/9d/0e/d99d0e3cc7ff84871ec9821195e8e50c.jpg" alt=""></div>
+                <div class="cardAnime"><img src="https://i.pinimg.com/originals/ce/07/30/ce07302d37513ccaac4b460ac06d78b9.jpg" alt=""></div> -->
+                <!-- <div class="cardAnime"></div>
+                <div class="cardAnime"></div>
+                <div class="cardAnime"></div>
+                <div class="cardAnime"></div>
+                <div class="cardAnime"></div> -->
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function voltar(){
+            location.href='https://www.google.com.br'
+        }
+
+        const ante = document.querySelector("#ante")
+        ante.textContent="<"
+
+        var array = [];
+
+        fetch('json.json')
+        .then(res => res.json())
+        .then(dados=>{
+            var dado = JSON.stringify(dados)
+            localStorage.setItem('obj',dado)
+        })
+        
+        var dados = JSON.parse(localStorage.getItem('obj'))
+        array.push(dados)
+        
+        const headerimg = document.querySelector("#headerimg")
+        const titulo = document.querySelector("#titulo")
+        const faixa = document.querySelector("#faixa")
+        const sinopes = document.querySelector("#sinopes")
+        const genero = document.querySelector("#genero")
+        const spanvoto = document.querySelector("#spanvoto")
+        const streamh1 = document.querySelector("#streamh1")
+        const anime = document.querySelector("#anime")
+        
+        
+        let a = 0;
+        for(let obj of array[0]){
+            //     <div class="cardAnime">
+                const cardDiv = document.createElement("div")
+                cardDiv.className='cardAnime'
+                
+            const cardVoto = document.createElement("button")
+            
+
+            const cardimg = document.createElement("img")
+            cardimg.src = array[0][a].img
+            cardDiv.appendChild(cardimg)
+            
+            anime.appendChild(cardDiv)
+            
+            a++
+        }
+        
+        const cardD = document.querySelectorAll(".cardAnime")
+        console.log(cardD[0])
+        
+        const cont = (array[0].length)*270
+        const conte = array[0].length
+        const j = 270;
+        let i =0
+        let h =0
+        let b = 0
+        let c =0
+        let d=0
+        ante.addEventListener("click",()=>{
+            if(i==cont && h==conte && b==conte && c==conte && d==conte){
+                i=0
+                h=0
+                b=0
+                c=0
+                d=0
+            }
+            if(i < cont && h<conte && b<conte && c<conte+1 && d<conte+1){
+                console.log(d)
+                anime.style.transform = `translateX(-${i}px)`
+                i=i+j
+                d++
+                // console.log(c)
+                headerimg.src= array[0][h].fundo
+                titulo.textContent= array[0][h].titulo
+                faixa.textContent= array[0][h].faixa
+                genero.textContent= array[0][h].genero
+                sinopes.textContent= array[0][h].sinopes
+                streamh1.textContent= array[0][h].stream
+                cardD[d].classList.remove('active')
+                cardD[c].classList.add('active')
+                // cardD[d].style.borderColor = 'transparent'
+                // cardD[c].style.borderColor = 'white'
+                // cardD[c].style.scale = '1.1'
+                voto()
+                b++
+                // console.log(i)
+                // console.log(h)
+                h++
+                c++
+                
+            }
+            
+            
+        })
+        function voto(){
+            spanvoto.style.width= `${array[0][h].voto}px`
+            if(spanvoto.style.width= array[0][b].voto==50){
+                spanvoto.style.background='red'
+            }
+            else if(spanvoto.style.width= array[0][b].voto==100){
+                spanvoto.style.background='orange'
+            }
+            else if(spanvoto.style.width= array[0][b].voto==150){
+                spanvoto.style.background='yellow'
+            }
+            else if(spanvoto.style.width= array[0][b].voto==200){
+                spanvoto.style.background='green'
+            }
+            else if(spanvoto.style.width= array[0][b].voto==300){
+                spanvoto.style.width="300px"
+            }
+            spanvoto.style.width= `${array[0][b].voto++}px`
+            console.log(spanvoto.style.width= array[0][b].voto)   
+        }
+
+        headerimg.src= array[0][h].fundo
+        titulo.textContent= array[0][h].titulo
+        faixa.textContent= array[0][h].faixa
+        genero.textContent= array[0][h].genero
+        sinopes.textContent= array[0][h].sinopes
+        streamh1.textContent= array[0][h].stream
+        spanvoto.style.width= `${array[0][0].voto}px`
+
+     
+
+
+     
+        
+    </script>
+</body>
+</html>
